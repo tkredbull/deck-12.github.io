@@ -1,0 +1,159 @@
+footer{
+    max-width: 1440px;
+    margin: 0px auto;
+    .container{
+        .footer-wrapper{
+            background-color: @bg-color-4;
+            padding: 39px 40px 35px 40px;
+            display: flex;
+            align-items: center;
+            .logo{
+                width: 17.13%;
+                .logo-link{
+                    color: #494B4F;
+                }
+                & .logo-text:nth-child(2){
+                    padding-top: 6px;
+
+                }
+                .logo-text{
+                    font-family: lato-regular;
+                    font-size: @f-size-3;
+                    color: @f-color-3
+                }
+            }
+            
+            .header-menu{
+                width: 62.87%;
+                .navbar-nav{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    .nav-item{
+                        list-style-type: none;
+                        display: inline-block;
+                        padding: 5px 0px;
+                        .nav-link{
+                            padding: 0px;
+                            &:hover{
+                                color: @bg-color-3;
+                            }
+                        }
+                    }
+                }
+            }
+            .mail-follow-wrapper{
+                width: 32%;
+                text-align: right;
+                .follow{
+                    padding-bottom: 16px;
+                    .follow-text{
+                        font-family: lato-regular;
+                        font-size: @f-size-3;
+                        color: @f-color-3
+                    }
+                    i{
+                        color: #494B4F;
+                        padding-left: 13px;
+                        font-size: 17px;
+                    }
+                }
+                .mail-follow{
+                    display: flex;
+                    justify-content: flex-end;
+                    .mail{
+                        padding: 4px 24px;
+                        border: none;
+                        outline: none;
+                        &::placeholder{
+                            padding-left: 15px;
+                            font-family: lato-regular;
+                            font-size: @f-size-3;
+                        }
+                    }
+                    .subscribe{
+                        font-weight: @fw-oswald-medium;
+                        background-color: @bg-color-3;
+                        color: @f-color-2;
+                        font-size: @f-size-1;
+                        padding: 9px 33px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    footer{
+        .container{
+            .footer-wrapper{
+                flex-wrap: wrap;
+                padding: 42px 20px 50px 20px;
+                align-items: baseline;
+                .logo{
+                    width: 33.65%;
+                }
+                .header-menu{
+                    width: 66.35%;
+                    .navbar-nav{
+                        display: grid;
+                        grid-template-columns: 39.34% 38.3% 22.36%;
+                    }
+                }
+                .mail-follow-wrapper{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 42px;
+                    .follow{
+                        order: 1;
+                        padding-bottom: 0px;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    footer{
+        .container{
+            .footer-wrapper{
+                padding: 39px 20px 58px 20px;
+                flex-direction: column;
+                .logo{
+                    width: 100%;
+                    .logo-text{
+                        padding-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+                .header-menu{
+                    order: 1;
+                    width: 100%;
+                    .navbar-nav{
+                        grid-template-columns: 52% 48%;
+                        .nav-item{
+                            padding: 7px 0px;
+                        }
+                    }
+                }
+                .mail-follow-wrapper{
+                    width: 100%;
+                    flex-direction: column;
+                    padding-top: 20px;
+                    .follow{
+                        order: 1;
+                        padding: 23px 0px 17px 0px;
+                        padding-top: 23px;
+                        padding-bottom: 17px;
+                    }
+                    .follow, .mail-follow{
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}

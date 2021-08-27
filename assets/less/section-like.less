@@ -1,0 +1,168 @@
+.section-like{
+    padding: 0px 40px;
+    .container{
+        .like{
+            font-size: 42px;
+            color: @f-color-1;
+            font-weight: @fw-oswald-medium;
+            text-align: center;
+            padding: 106px 0px 39px 0px;
+        }
+        .like-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 29px;
+            padding-bottom: 120px;
+            .card-like{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid @border-color;
+                .like-image{
+                    width: 100%;
+                    padding-top: 66.59%;
+                    background-image: url(../images/crew-22235.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                    }
+                }
+                .play{   
+                    margin: 14px 0px 18px 30px;  
+                    flex-shrink: 0;  
+                    display: flex;
+                    align-items: center;      
+                    .fa-play-circle{
+                        font-size: @f-size-6;
+                        color: @f-color-4;
+                        padding-right: 10px
+                    }         
+                }
+                .card-content{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    .card-top{
+                        max-width: 305px;
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        padding-left: 30px;
+                        .text-title{
+                            display: block;
+                            padding-top: 0px;
+                            margin-bottom: 10px;
+                        }
+                        .text{
+                            width: 100%;
+                            margin: 0px;
+                            margin-top: auto;
+                            padding-bottom: 24px;
+                            display: block;
+                        }
+                    }
+                    .card-bottom{
+                        margin-top: auto;
+                        display: flex;
+                        border-top: 1px solid @border-color;
+                        border-bottom: 1px solid @border-color;
+                        padding: 22px 0px 22px 30px;
+                        .card-bottom-icon{
+                            padding-right: 30px;
+                            img{
+                                padding-right: 5px;
+                            }
+                            .icon-text{
+                                font: 13px lato-regular;
+                                color: @f-color-3;
+                            }
+                        }
+                        & .card-bottom-icon:last-child{
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+            & .card-like:nth-child(2) .like-image{
+                background-image: url(../images/luca-bravo-207676-unsplash.jpg);
+            }
+            & .card-like:nth-child(3) .like-image{
+                background-image: url(../images/oliur-rahman-123819.jpg);
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    .section-like{
+        padding: 0px 20px;
+        .container{
+            .like{
+                font-size: 36px;
+                padding-top: 88px;
+            }
+            .like-wrapper{
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 16px;
+                padding-bottom: 103px;
+                & .card-like:last-child{
+                    display: none;
+                }
+                .card-like{
+                    .like-image{
+                        padding-top: 73.31%;
+                    }
+                    .card-content{
+                        .card-top{
+                            .text{
+                                padding-bottom: 30px;
+                            }
+                        }
+                        .card-bottom{
+                            padding: 26px 0px 16px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .section-like{
+        .container{
+            .like{
+                font-size: 38px;
+                max-width: 250px;
+                margin: auto;
+                padding-top: 105px;
+                padding-bottom: 44px;
+            }
+            .like-wrapper{
+                display: block;
+                padding-bottom: 89px;
+                .card-like{
+                    box-shadow: 0px 2px 4px 0px @border-color;
+                    .like-image{
+                        padding-top: 64.78%;
+                    }
+                    .card-content{
+                        .card-top{
+                            .text{
+                                padding-bottom: 16px;
+                            }
+                        }
+                        .card-bottom{
+                            padding: 18px 0px 27px 30px;
+                        }
+                    }
+                }
+                & .card-like:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+    }
+}

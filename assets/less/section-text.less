@@ -1,0 +1,318 @@
+.main-content{
+    .section-text{
+        padding: 0px 40px;
+        .container{
+            .text-wrapper{
+                .text-top{
+                    & .text:nth-child(2){
+                        margin-bottom: 34px;
+                    }
+                    & .text:nth-child(3){
+                        margin-bottom: 60px;
+                    }  
+                }
+                .image{
+                    max-width: 1130px;
+                    margin: auto;
+                    padding-bottom: 75px;
+                    .image-inner{
+                        overflow: hidden;
+                        width: 100%;
+                        padding-top: 49.56%;
+                        background-image: url(../images/oliur-rahman-2728752.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+                    .text-image{
+                        font-size: @f-size-3;
+                    }
+                }
+                .text-item{
+                    padding-bottom: 35px;
+                    position: relative;                   
+                    & .text:first-child{
+                        padding-bottom: 29px;
+                    }
+                }              
+                .text-primary{
+                    max-width: 675px;
+                    margin: auto;
+                    padding-top: 32px;
+                    position: relative;                                 
+                    .text-special{
+                        display: flex;
+                        .count{
+                            position: relative;
+                            width: 34px;
+                            height: 34px;
+                            border: 2px solid @bg-color-3;
+                            border-radius: 50%;
+                            margin-right: 20px;
+                            flex-shrink: 0;
+                            .count-inner{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: @f-color-1;
+                            } 
+                        }
+                        .text-special-inner{              
+                            .text{
+                                padding-bottom: 32px;
+                            }
+
+                            & .text-special-title:nth-child(2){
+                                display: none;
+                            }
+                            & .text:nth-child(4){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .text-item, .text-primary{
+                    &::after{
+                        content: "";
+                        width: 730px;
+                        height: 1px;
+                        background-color: @border-color;
+                        position: absolute;
+                        bottom: -1px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .text-bottom{
+                    display: flex;
+                    max-width: 870px;
+                    margin: auto;
+                    padding-top: 52px;
+                    padding-bottom: 108px;
+                    .text-bottom-left{
+                        width: 59.77%;
+                        & .text:first-child{
+                            padding-bottom: 29px;
+                        }
+                    }
+                    .text-bottom-right{
+                        width: 40.23%;
+                        padding-left: 67px;
+                        .author{
+                            padding-top: 43px;
+                            .author-image{
+                                flex-shrink: 0;
+                                width: 46px;
+                                height: 46px;                         
+                                background-image: url(../images/35w.png);
+                            }
+                            .author-inner{                   
+                                .name{
+                                    color: @f-color-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.text{
+    font-size: @f-size-5;
+    color: @f-color-5;
+    font-family: lato-regular;
+    max-width: 675px;
+    margin: auto;
+}
+.text-title{
+    font-size: @f-size-6;
+    color: @f-color-1;
+    font-family: lato-semibold;
+    margin-bottom: 25px;
+    padding-top: 43px;
+    line-height: 1.3;
+}
+.text-special-title{
+    font-size: 21px;
+    color: @f-color-1;
+    font-family: lato-semibold;
+    margin-bottom: 14px;
+}
+.author-text{
+    font-family: lato-regular;
+    font-size: @f-size-3;
+    margin-bottom: 0px;
+    color: @f-color-5;
+}
+@media screen and (max-width: 1023px){
+    .main-content{
+        .section-text{
+            padding: 0px;
+            .container{
+                .text-wrapper{
+                    .text-top{
+                        & .text:nth-child(2){
+                        margin-bottom: 5px;
+                    }
+                        & .text:nth-child(3){
+                            margin-bottom: 100px;
+                        }
+                        .text{
+                            max-width: 490px;
+                        }
+                        .text-title{
+                            padding-top: 56px;
+                            margin-bottom: 27px;
+                        }
+                    }
+                    .image{
+                        max-width: 100%;
+                        padding-bottom: 80px;
+                        .image-inner{
+                            padding-top: 72.92%;
+                            background-image: url(../images/oliur-rahman-2728753-tab.jpg);                     
+                        }
+                    }
+                    .text-item{
+                        padding-bottom: 81px;
+                        & .text:first-child{
+                            padding-bottom: 3px;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        .text{
+                            max-width: 490px;                      
+                        }
+                    }
+                    .text-primary{
+                        &::after{
+                            display: none;
+                        }
+                        border-top: 1px solid @border-color;
+                        border-bottom: 1px solid @border-color;
+                        max-width: 490px;
+                        padding: 0px 10px;
+                        padding-top: 30px;  
+                        .text-special{
+                            .text-special-inner{
+                                .text{
+                                    padding-bottom: 41px;
+                                }
+                            }
+                        } 
+                        & .text-special:nth-child(2){
+                            .text-special-inner{
+                                .text{
+                                    padding-bottom: 62px;        
+                                }
+                            }
+                        }                    
+                    }
+                    .text-bottom{
+                        display: block;
+                        max-width: 490px;
+                        padding-top: 54px;
+                        padding-bottom: 125px;
+                        .text-bottom-left{
+                            width: 100%;
+                            & .text:first-child{
+                                padding-bottom: 2px;
+                            }
+                        }
+                        .text-bottom-right{
+                            width: 100%;
+                            padding-left: 0px;
+                            padding-top: 83px;
+                            .text-title{
+                                padding-top: 0px;
+                            }
+                            .author{
+                                padding-top: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .main-content{
+        .section-text{
+            padding: 0px;
+            background-color: @bg-color-2;
+            .container{
+                .text-wrapper{
+                    .text-top{
+                        padding-right: 20px;
+                        padding-left: 20px;
+                        .text-title{
+                            padding-top: 51px;
+                            margin-bottom: 59px;
+                        }
+                        & .text:nth-child(2){
+                            margin-bottom: 57px;
+                        }
+                        & .text:nth-child(3){
+                            display: none;
+                        }
+                    }
+                    .image{
+                        padding-bottom: 55px;
+                        .image-inner{
+                            padding-top: 74.66%;
+                            background-image: url(../images/oliur-rahman-2728753mobie.jpg);
+                        }
+                        .text-image{
+                            padding-left: 20px;
+                        }
+                    }
+                    .text-item{
+                        padding: 0px 20px 32px 20px;
+                        & .text:nth-child(2){
+                            display: none;
+                        }
+                    }
+                    .text-primary{
+                        margin: 0px 20px;
+                        border-bottom: none;
+                        .text-special{
+                            .text-special-inner{
+                                .text-special-title{
+                                    margin-bottom: 12px;
+                                }
+                                .text{
+                                    padding-bottom: 36px;
+                                }
+                                .text-special-title:nth-child(1){
+                                    display: none;
+                                }
+                                .text-special-title:nth-child(2){
+                                    display: block;
+                                }
+                                .text:nth-child(3){
+                                    display: none;
+                                }
+                                .text:nth-child(4){
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .text-bottom{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+}

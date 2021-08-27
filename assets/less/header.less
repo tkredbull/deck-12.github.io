@@ -1,0 +1,99 @@
+header{
+    max-width: 1440px;
+    margin: 0px auto;
+    .header-wrapper{
+            border-bottom: 1px solid @border-color;
+            background-color: @bg-color-1;
+            padding: 30px 40px;
+            display: flex;
+            align-items: center;
+            .logo{
+                width: 8.7%;
+            }
+            .navbar{
+                width: 91.3%;  
+                background-color: @bg-color-1;   
+                display: flex;       
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 0px;
+                    .navbar-nav{                 
+                        flex-direction: row;
+                        & .nav-item:first-child{
+                            padding-left: 0px;
+                        }
+                        & .nav-item:last-child{
+                            padding-right: 0px;
+                        }
+                        .nav-item{
+                            padding: 0px 27px;
+                            list-style-type: none;
+                            .nav-link{
+                                font-weight: @fw-oswald-medium;
+                            }
+                        }
+                    }
+                    .navbar-toggler{
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        margin-left: auto;
+                        padding: 0px;
+                        .fa-bars{
+                            color: @f-color-1;
+                            font-size: 30px;
+                        }
+                    }
+                
+            }
+        }
+    
+}
+.container{
+    max-width: 100%;
+    padding: 0px;
+}
+.logo-link{
+    font-size: @f-size-6;
+    color: @f-color-1;
+    font-family: lato-bold;
+    position: relative;
+    &::after{
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: @bg-color-3;
+        position: absolute;
+        bottom: 5px;
+        right: -5px;
+    }
+}
+.nav-link{
+    font-size: @f-size-3;
+    color: @f-color-3;
+    &:hover{
+        color: @bg-color-3;
+    }
+}
+@media screen and (max-width: 1023px){
+    header .header-wrapper{
+        padding: 30px 20px;
+        .navbar .navbar-nav{
+            display: none;
+        }
+    } 
+}
+@media screen and (max-width: 767px){
+    header{
+        .header-wrapper{
+            padding: 20px 20px;
+            .logo{
+                width: 50%;
+            }
+            .navbar{
+                width: 50%;
+            }
+        }
+    }
+}
+
